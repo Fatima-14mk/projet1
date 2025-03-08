@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* f  flu*/
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('back.jpg') center/cover no-repeat;
+    filter: blur(5px);
+    z-index: -1; 
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1; /* Permet d'occuper l'espace à gauche */
+}
+
+.logo img {
+    height: 100px; /* Ajuste selon la taille désirée */
+    width: 100px;
+    padding-top: 5px;
+    padding-left: 5x; /* Ajoute un peu d'espace depuis le bord */
+    border-radius: 10px;
+
+}
+.menu {
+    margin-right: 20px; /* Augmente l'espace entre le menu et le bouton */
+    display: flex;
+    gap: 20px; /* Ajoute de l’espace entre les liens du menu */
+}
+
+
+
+
+.menu a {
+    text-decoration: none;
+    color:#024ee2;
+    padding: 10px 20px;
+    font-size: 20px;
+   
+}
+
+.menu a:hover {
+    border: 1px solid #005BAC; /* Bleu */
+    background: transparent;
+}
+.register {
+    margin-left: 30px; /* Espace entre le menu et le bouton */
+}
+.register a {
+    text-decoration: none;
+    color: blanchedalmond;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background:#024ee2;
+}
+
+.register a:hover {
+    border: 1px solid #005BAC;
+    background: #005BAC; /* Bleu */
+}
+
+.h-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #024ee2;
+}
+
+
+
+
+
+/* --- ANIMATION D'AFFICHAGE --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main{
+    
+    background: linear-gradient(to bottom, #e9e9e9, #1c1cff),url(back.jpg); /* Dégradé bleu vers orange */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+}
+
+/* Style général de la section About Us */
+#about {
+  
+    padding: 80px 10%;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Quand la section devient visible */
+#about.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style du conteneur */
+#about .container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Style des titres */
+#about h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/* Style du texte */
+#about p {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style de la liste */
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#about ul li::before {
+    content: "✔️"; 
+    margin-right: 10px;
+    color: rgb(197, 205, 92);
+}
+
+/* Style des boutons */
+#about .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 20px 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background: #024ee2;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#about .btn:hover {
+    background: blue;
+}
+
+
