@@ -45,27 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
   
     observer.observe(aboutSection);
   });
-  document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("signinModal");
-    const btn = document.querySelector(".register a");
-    const close = document.querySelector(".close");
-  
-    // Quand on clique sur "Sign in as..", on affiche le modal
-    btn.addEventListener("click", (event) => {
-        event.preventDefault();
-        modal.style.display = "flex";
-    });
-  
-    // Quand on clique sur la croix, on ferme le modal
-    close.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-  
-    // Fermer le modal si on clique en dehors
-    window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-  });
-  
+ 
