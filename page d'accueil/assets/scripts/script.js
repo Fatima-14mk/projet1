@@ -45,4 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
     observer.observe(aboutSection);
   });
- 
+ /*debut slider*/
+
+/*fin slader*/

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home">
+        <nav >
+          <div class="logo ">
+            <img src="../page d'accueil/assets/images/logo.png" alt="logo" />
+          </div>
+  
+          <div class="menu">
+            <a href="../page d'accueil/index.html#home">Home</a>
+            <a href="../page d'accueil/index.html#about">About us</a>
+            <a href="../page d'accueil/index.html#contact">Contact</a>
+          </div>
+          <div class="register">
+            <a href="#">Donor</a>
+            <a href="#">Log in </a>
+          </div>
+        </nav>
+    </header>
+    <main class="form-container">
+        <h2>Book Your Reservation</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <label for="note">Additional Notes</label>
+                <textarea id="note" name="note"></textarea>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+</body>
+</html>
