@@ -77,8 +77,9 @@ body {
 }
 
 .menu a:hover {
-  border: 1px solid #005bac; /* Bleu */
-  background: transparent;
+ border-radius: 10px;
+ color: white;
+  background:#005bac;
 }
 .register {
   margin-left: 30px; /* Espace entre le menu et le bouton */
@@ -336,9 +337,9 @@ body {
 }
  /*deb contact*/
  #contact{
-  padding-top: 50px;
+  padding-top: 40px;
   background: #f4f4f4;
-  height: 550px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,15 +347,16 @@ body {
 }
 .contact-form {
   background: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 600px;
-  height: 450px;
+  height: 520px;
   text-align: center;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .contact-form h2 {
+  margin-top: 5px;
   margin-bottom: 30px;
   color: #0063b5;
 }
@@ -370,8 +372,17 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
+.contact-form input[name="email"] {
+  width: 100%; /* Prend toute la largeur */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom:30px;
+}
+
 .contact-form textarea {
   width: 100%;
   resize: none;
@@ -379,7 +390,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  margin-bottom: 10px;
+  
   margin-bottom: 30px;
 }
 .contact-form button {
